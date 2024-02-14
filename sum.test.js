@@ -13,7 +13,15 @@
 //     expect(n).toBeFalsy(); 
 // })
 
-test("one is truthy", () => {
-    const n = 1; 
-    expect(n).toBeTruthy()
+// test("one is truthy", () => {
+//     const n = 1; 
+//     expect(n).toBeTruthy()
+// })
+const myFunction = require("./sum")
+
+test("throws on invalid input", () => {
+    expect(() => {
+        myFunction(3)
+    }).toThrow(); 
+    
 })
